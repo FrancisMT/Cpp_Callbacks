@@ -1,5 +1,7 @@
-#include"MathUtils/BabylonianSqrt.h"
 #include<assert.h>
+#include<cmath>
+
+#include"BabylonianSqrt.h"
 
 BblSqrt::BblSqrt(long max_error) 
     : _max_error_val(max_error) {}
@@ -11,7 +13,7 @@ void BblSqrt::add_callback(callback const& cb) {
 double BblSqrt::get_result(double const input) {
 
     // Error check
-    assert(input < 0.f);
+    assert(input > 0.f);
 
     // Calculation iteration number.
     size_t calc_iteration = 0;

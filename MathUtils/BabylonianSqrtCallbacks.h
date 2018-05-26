@@ -18,9 +18,10 @@ namespace BblSqrtCallbacks {
     };
 
     class FunctorCallback {
-        void operator()(size_t const iteration, double const guess) {
-            std::cout << iteration << " : " << guess << " (Functor)" << std::endl;
-        }
+        public:
+            void operator()(size_t const iteration, double const guess) {
+                std::cout << iteration << " : " << guess << " (Functor)" << std::endl;
+            }
     };
 
     auto LambdaCallback = [](size_t const iteration, double const guess){

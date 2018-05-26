@@ -1,6 +1,7 @@
-#include"IMathFormula.h"
 #include<vector>
 #include<functional>
+
+#include"IMathFormula.h"
 
 class BblSqrt : public IMathFormula {
 
